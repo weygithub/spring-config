@@ -10,7 +10,7 @@ spring:
     password: root
   data: 
     solr: 
-      host: http://10.1.11.131:8983/solr/
+      host: http://10.1.11.131:8983/solr/collection1/
 # sleuth配置
   zipkin: 
     rabbitmq: 
