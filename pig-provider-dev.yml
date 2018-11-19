@@ -17,7 +17,7 @@ mybatis:
     map-underscore-to-camel-case: true
 
 pigAddress: 
-  json_url: http://10.1.11.131:8082/file/ #车书目录结构json地址（移动端-获取车书目录结构用）
+  json_url: http://10.1.11.131/file/ #车书目录结构json地址（移动端-获取车书目录结构用）
   indicator_url: /data/ext #指示灯列表json地址（车机端-扩展文件请求用）
   heat_url: /data/ext #热词列表json地址（车机端-扩展文件请求用）
   indicator_img: /data/ext #指示灯图片地址（车机端-扩展文件请求用）
