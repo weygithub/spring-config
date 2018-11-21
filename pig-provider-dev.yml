@@ -8,7 +8,14 @@ spring:
     url: jdbc:mysql://10.1.11.131:3306/pig?useUnicode=true&characterEncoding=utf8
     username: root
     password: root
-
+hystrix:
+  threadpool:
+    default:
+      coreSize: 100
+  command:
+    default:
+      cricuitBreaker:
+        requestVolumeThreshold: 500
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
