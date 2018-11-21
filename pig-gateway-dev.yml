@@ -14,8 +14,8 @@ zuul:
     eager-load:
       enabled: true
       clients: pig-auth,pig-upms-service,pig-demo-service,pig-motorcycle-service,pig-search-server
-    ReadTimeout: 10000
-    ConnectTimeout: 10000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
