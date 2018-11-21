@@ -30,7 +30,14 @@ zuul:
         limit: 100
         quota: 100
         refresh-interval: 3
-
+hystrix:
+  threadpool:
+    default:
+      coreSize: 100
+  command:
+    default:
+      cricuitBreaker:
+        requestVolumeThreshold: 500
 security:
   encode:
     key: '1234567887654321' #必须16位
