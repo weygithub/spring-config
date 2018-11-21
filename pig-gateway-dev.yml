@@ -33,10 +33,10 @@ zuul:
 hystrix:
   threadpool:
     default:
-      coreSize: 100
+      coreSize: 500
   command:
     default:
-      cricuitBreaker:
+      circuitBreaker:
         requestVolumeThreshold: 500
 security:
   encode:
