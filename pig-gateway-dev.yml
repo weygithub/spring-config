@@ -38,7 +38,7 @@ ribbon:
 hystrix:
   threadpool:
     default:
-      coreSize: 1000
+      coreSize: 500 #缺省10
   command:
     default:
       execution: 
@@ -46,7 +46,7 @@ hystrix:
           enabled: true
         isolation: 
           thread: 
-            timeoutInMilliseconds: 300000
+            timeoutInMilliseconds: 30000 #缺省1000
       circuitBreaker:
         requestVolumeThreshold: 10000
       fallback: 
