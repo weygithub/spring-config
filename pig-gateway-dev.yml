@@ -52,7 +52,7 @@ hystrix:
           thread: 
             timeoutInMilliseconds: 30000 #缺省1000
       circuitBreaker:
-        requestVolumeThreshold: 10000
+        requestVolumeThreshold: 1000
       fallback: 
         isolation: 
           semaphore: 
