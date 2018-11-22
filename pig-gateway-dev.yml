@@ -13,7 +13,7 @@ zuul:
   eureka:
     pig-search-server: 
       semaphore: 
-        max-semaphores: 2000
+        maxSemaphores: 2000
   ribbon:
     eager-load:
       enabled: true
