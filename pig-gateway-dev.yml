@@ -36,7 +36,7 @@ ribbon:
 hystrix:
   threadpool:
     default:
-      coreSize: 500
+      coreSize: 1000
   command:
     default:
       circuitBreaker:
