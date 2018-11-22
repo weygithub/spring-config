@@ -48,6 +48,8 @@ hystrix:
   threadpool:
     default:
       coreSize: 1000 #缺省10
+  metrics:
+    enabled: true
   command:
     default:
       execution: 
