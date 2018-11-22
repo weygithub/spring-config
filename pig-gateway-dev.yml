@@ -47,6 +47,10 @@ hystrix:
             timeoutInMilliseconds: 300000
       circuitBreaker:
         requestVolumeThreshold: 10000
+      fallback: 
+        isolation: 
+          semaphore: 
+            maxConcurrentRequests: 100
 security:
   encode:
     key: '1234567887654321' #必须16位
