@@ -44,6 +44,10 @@ zuul:
 ribbon:
   ReadTimeout: 30000
   ConnectTimeout: 30000
+pig-search-server:
+  ribbon:
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
 hystrix:
   threadpool:
     default:
@@ -58,8 +62,8 @@ hystrix:
         isolation: 
           thread: 
             timeoutInMilliseconds: 31000 #缺省1000
-      # circuitBreaker:
-      #   requestVolumeThreshold: 1000
+      circuitBreaker:
+        requestVolumeThreshold: 1000
       # fallback: 
       #   isolation: 
       #     semaphore: 
