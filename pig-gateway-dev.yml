@@ -14,8 +14,8 @@ zuul:
     eager-load:
       enabled: true
       clients: pig-auth,pig-upms-service,pig-demo-service,pig-motorcycle-service,pig-search-server
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
+#     ReadTimeout: 30000
+#     ConnectTimeout: 30000
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
@@ -31,8 +31,8 @@ zuul:
         quota: 100
         refresh-interval: 3
 ribbon:
-  ReadTimeout: 30000
-  ConnectTimeout: 30000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
 hystrix:
   threadpool:
     default:
