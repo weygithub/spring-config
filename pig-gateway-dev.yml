@@ -38,7 +38,7 @@ ribbon:
 hystrix:
   threadpool:
     default:
-      coreSize: 500 #缺省10
+      coreSize: 1000 #缺省10
   command:
     default:
       execution: 
