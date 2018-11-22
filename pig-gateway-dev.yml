@@ -30,6 +30,9 @@ zuul:
         limit: 100
         quota: 100
         refresh-interval: 3
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
 hystrix:
   threadpool:
     default:
@@ -37,7 +40,7 @@ hystrix:
   command:
     default:
       circuitBreaker:
-        requestVolumeThreshold: 500
+        requestVolumeThreshold: 1000
 security:
   encode:
     key: '1234567887654321' #必须16位
