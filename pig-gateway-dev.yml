@@ -9,8 +9,8 @@ spring:
     sampler:
       percentage: 0.2
 
-zuul:
-  eureka:
+zuul: 
+  eureka: 
     pig-search-server: 
       semaphore: 
         maxSemaphores: 20000
