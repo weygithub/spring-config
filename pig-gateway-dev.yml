@@ -10,8 +10,10 @@ spring:
       percentage: 0.2
 
 zuul:
-  semaphore: 
-    maxSemaphores: 2000
+  eureka:
+    pig-search-server: 
+      semaphore: 
+        max-semaphores: 2000
   ribbon:
     eager-load:
       enabled: true
