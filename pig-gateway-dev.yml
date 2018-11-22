@@ -42,8 +42,8 @@ zuul:
         quota: 100
         refresh-interval: 3
 ribbon:
-  ReadTimeout: 600000
-  ConnectTimeout: 600000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
 hystrix:
   threadpool:
     default:
@@ -56,13 +56,13 @@ hystrix:
         isolation: 
           thread: 
             timeoutInMilliseconds: 30000 #缺省1000
-      circuitBreaker:
-        requestVolumeThreshold: 1000
-      fallback: 
-        isolation: 
-          semaphore: 
-            maxConcurrentRequests: 1000
-            maxSemaphores: 2000
+      # circuitBreaker:
+      #   requestVolumeThreshold: 1000
+      # fallback: 
+      #   isolation: 
+      #     semaphore: 
+      #       maxConcurrentRequests: 1000
+      #       maxSemaphores: 2000
 security:
   encode:
     key: '1234567887654321' #必须16位
