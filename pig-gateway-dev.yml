@@ -42,8 +42,8 @@ zuul:
         quota: 100
         refresh-interval: 3
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
 hystrix:
   threadpool:
     default:
@@ -55,7 +55,7 @@ hystrix:
           enabled: true
         isolation: 
           thread: 
-            timeoutInMilliseconds: 30000 #缺省1000
+            timeoutInMilliseconds: 3100 #缺省1000
       # circuitBreaker:
       #   requestVolumeThreshold: 1000
       # fallback: 
