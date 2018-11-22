@@ -8,7 +8,10 @@ spring:
   sleuth:
     sampler:
       percentage: 0.2
-
+routes: 
+  pig-search-server: 
+    semaphore: 
+      max-semaphores: 200000
 zuul: 
   eureka: 
     pig-search-server: 
