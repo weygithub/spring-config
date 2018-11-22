@@ -14,11 +14,11 @@ spring:
 #       max-semaphores: 200000
 zuul: 
   semaphore:
-    max-semaphores: 200000
-  eureka: 
-    pig-search-server: 
-      semaphore: 
-        max-semaphores: 200000
+    max-semaphores: 2000
+  # eureka: 
+  #   pig-search-server: 
+  #     semaphore: 
+  #       max-semaphores: 200000
   ribbon:
     eager-load:
       enabled: true
