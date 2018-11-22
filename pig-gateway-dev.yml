@@ -52,7 +52,8 @@ hystrix:
       fallback: 
         isolation: 
           semaphore: 
-            maxConcurrentRequests: 100
+            maxConcurrentRequests: 1000
+            maxSemaphores:2000
 security:
   encode:
     key: '1234567887654321' #必须16位
