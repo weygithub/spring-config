@@ -40,7 +40,7 @@ hystrix:
   command:
     default:
       circuitBreaker:
-        requestVolumeThreshold: 1000
+        requestVolumeThreshold: 10000
 security:
   encode:
     key: '1234567887654321' #必须16位
