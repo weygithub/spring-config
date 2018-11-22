@@ -10,6 +10,8 @@ spring:
       percentage: 0.2
 
 zuul:
+  semaphore: 
+    max-semaphores: 2000
   ribbon:
     eager-load:
       enabled: true
@@ -33,8 +35,8 @@ zuul:
         quota: 100
         refresh-interval: 3
 ribbon:
-  readTimeout: 600000
-  connectTimeout: 600000
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
 hystrix:
   threadpool:
     default:
