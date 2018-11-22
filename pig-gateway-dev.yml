@@ -18,6 +18,8 @@ zuul:
 #     ConnectTimeout: 30000
   ignoredServices: '*'
   host:
+    max-per-route-connections: 1000
+    max-total-connections: 1000
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
   ratelimit:
@@ -31,8 +33,8 @@ zuul:
         quota: 100
         refresh-interval: 3
 ribbon:
-  ReadTimeout: 300000
-  ConnectTimeout: 300000
+  read-timeout: 300000
+  connect-timeout: 300000
 hystrix:
   threadpool:
     default:
