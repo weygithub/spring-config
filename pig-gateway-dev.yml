@@ -64,6 +64,11 @@ hystrix:
             timeoutInMilliseconds: 31000 #缺省1000
       circuitBreaker:
         requestVolumeThreshold: 1000
+    pig-search-server: 
+      execution: 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 30000
       # fallback: 
       #   isolation: 
       #     semaphore: 
