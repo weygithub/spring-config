@@ -55,7 +55,7 @@ sharding:
     expose-spring-macro-helpers: true
     prefer-file-system-access: true
     suffix: .ftl
-    template-loader-path: classpath:/templates/
+    template-loader-path: /data/images/
 
 #mybaits-plus配置，修改主键类型，mapper.xml、type 别名等
 mybatis-plus:
