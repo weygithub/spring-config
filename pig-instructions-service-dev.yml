@@ -45,7 +45,7 @@ sharding:
   freemarker:
     allow-request-override: false
     allow-session-override: false
-    cache: true
+    cache: false
     charset: UTF-8
     check-template-location: true
     content-type: text/html
